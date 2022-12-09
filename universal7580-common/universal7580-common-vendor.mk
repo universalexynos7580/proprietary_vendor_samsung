@@ -21,5 +21,21 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7580-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/samsung/universal7580-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so
 
+# Patched to load libuti32.so from /system/lib instast of libutils.so
+PRODUCT_COPY_FILES += \
+    vendor/samsung/universal7580-common/proprietary/lib/hw/hwcomposer.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/hwcomposer.exynos5.so
+
+# \
+#    vendor/samsung/universal7580-common/proprietary/lib/libexynosdisplay.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexynosdisplay.so \
+#    vendor/samsung/universal7580-common/proprietary/lib/libhwcutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhwcutils.so
+
+# latinimegoogle
+PRODUCT_COPY_FILES += \
+    vendor/samsung/universal7580-common/proprietary/vendor/lib/libjni_latinimegoogle.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjni_latinimegoogle.so
+
+# VNDK
+PRODUCT_COPY_FILES += \
+    vendor/samsung/universal7580-common/proprietary/vendor/lib/android.hardware.wifi.hostapd-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi.hostapd-V1-ndk.so
+
 # Create Mali links for Vulkan and OpenCL
 PRODUCT_PACKAGES += libGLES_mali
