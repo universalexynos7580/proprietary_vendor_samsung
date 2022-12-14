@@ -25,10 +25,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/universal7580-common/proprietary/lib/hw/hwcomposer.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/hwcomposer.exynos5.so
 
-# \
-#    vendor/samsung/universal7580-common/proprietary/lib/libexynosdisplay.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexynosdisplay.so \
-#    vendor/samsung/universal7580-common/proprietary/lib/libhwcutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhwcutils.so
-
 # latinimegoogle
 PRODUCT_COPY_FILES += \
     vendor/samsung/universal7580-common/proprietary/vendor/lib/libjni_latinimegoogle.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjni_latinimegoogle.so
