@@ -22,8 +22,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7580-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so
 
 # Patched to load libuti32.so from /system/lib instead of libutils.so
-PRODUCT_COPY_FILES += \
-    vendor/samsung/universal7580-common/proprietary/lib/hw/hwcomposer.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/hwcomposer.exynos5.so
+# PRODUCT_COPY_FILES += \
+#    vendor/samsung/universal7580-common/proprietary/lib/hw/hwcomposer.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/hwcomposer.exynos5.so
 
 # latinimegoogle
 PRODUCT_COPY_FILES += \
